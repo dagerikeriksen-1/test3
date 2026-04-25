@@ -24,17 +24,17 @@
             cursor:pointer;
         }
 
-        /* 🔥 FLYTT HELE MENYEN NOK MOT VENSTRE */
+        /* 🔥 HOLD MENYEN PERFEKT SENTRERT */
         #header nav {
-            position: relative;
-            left: -130px; /* juster evt -100 / -120 for perfeksjon */
-        }
-
-        /* Pen spacing */
-        #header nav ul {
             display: flex;
             justify-content: center;
+        }
+
+        /* 🔥 JUSTER POSISJON UTEN Å ØDELEGGE SENTRERING */
+        #header nav ul {
+            display: flex;
             gap: 42px;
+            transform: translateX(-60px); /* juster -50 / -70 etter behov */
         }
     </style>
 </head>
