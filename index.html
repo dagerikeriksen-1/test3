@@ -24,16 +24,17 @@
             cursor:pointer;
         }
 
-        /* 🔥 BEHOLDER ORIGINAL SENTRERING AV MENY */
-        
-        /* Flytt kun "Produkter" litt bort fra midtlinjen */
-        #header nav ul li:nth-child(2) {
-            transform: translateX(-30px);
+        /* 🔥 FLYTT HELE MENYEN SAMLET */
+        #header nav {
+            position: relative;
+            left: -65px; /* juster evt -60 / -70 for perfeksjon */
         }
 
-        /* Litt balanse på første item så det ser naturlig ut */
-        #header nav ul li:nth-child(1) {
-            transform: translateX(-10px);
+        /* 🔥 BEDRE BALANSE MELLOM KNAPPER */
+        #header nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 42px;
         }
     </style>
 </head>
