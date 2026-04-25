@@ -189,16 +189,20 @@
                 <span class="lang en">Contact</span>
             </h2>
 
-            <form>
+            <!-- MAILTO FORM (WORKING BASIC VERSION) -->
+            <form action="mailto:post@eriksenaudio.com" method="post" enctype="text/plain">
+
                 <div class="fields">
                     <div class="field half">
-                        <input type="text" placeholder="Navn / Name" />
+                        <input type="text" name="name" placeholder="Navn / Name" />
                     </div>
+
                     <div class="field half">
-                        <input type="email" placeholder="E-post / Email" />
+                        <input type="email" name="email" placeholder="E-post / Email" />
                     </div>
+
                     <div class="field">
-                        <textarea rows="4" placeholder="Melding / Message"></textarea>
+                        <textarea name="message" rows="4" placeholder="Melding / Message"></textarea>
                     </div>
                 </div>
 
