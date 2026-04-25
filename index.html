@@ -13,7 +13,6 @@
         position:absolute;
         top:20px;
         right:20px;
-        z-index: 10;
     }
 
     .lang-switch button {
@@ -26,29 +25,20 @@
     }
 
     /* ===============================
-       🎯 OPTISK MIDTLINJE SYSTEM
+       🎯 ORIGINAL SENTRERING BEHOLDES
        =============================== */
 
-    /* 1. Behold normal sentrering */
-    #header {
+    #header nav {
         text-align: center;
     }
 
-    #header .content {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* 2. OPTISK OFFSET (HELE HEADER SYSTEMET) */
-    #header .inner {
-        transform: translateX(-25px); /* JUSTER: -15 til -40 */
-    }
-
-    /* 3. NAV BEHOLDER CLEAN INLINE FLOW */
     #header nav ul {
         display: inline-block;
         padding: 0;
         margin: 0;
+
+        /* 🔥 HER ER LØSNINGEN */
+        transform: translateX(-20px);  /* JUSTER: -10 til -40 */
     }
 
     #header nav ul li {
