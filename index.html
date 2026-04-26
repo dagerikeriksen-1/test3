@@ -101,6 +101,7 @@
     <!-- MAIN -->
     <div id="main">
 
+        <!-- INTRO -->
         <article id="intro">
             <h2 class="major">
                 <span class="lang no">Opplev forskjellen</span>
@@ -130,6 +131,7 @@
             </ul>
         </article>
 
+        <!-- PRODUCTS -->
         <article id="products">
             <h2 class="major">
                 <span class="lang no">Produkter</span>
@@ -148,6 +150,7 @@
             </p>
         </article>
 
+        <!-- ABOUT -->
         <article id="about">
             <h2 class="major">
                 <span class="lang no">Om oss</span>
@@ -159,22 +162,36 @@
             <p>
                 <span class="lang no">
                     Eriksen Reference Audio AS er etablert med et tydelig mål: å formidle musikkopplevelser på høyeste nivå – og gjøre ekte hi-fi relevant for en ny generasjon lyttere.<br><br>
-                    Selskapet drives av Dag-Erik Eriksen...
+
+                    Selskapet drives av Dag-Erik Eriksen, med en livslang interesse for lyd og en inngående forståelse av hele signalkjeden – fra digitale løsninger til analoge oppsett.<br><br>
+
+                    Hver komponent vurderes i sammenheng med helheten. Samspill, plassering og elektrisk kontroll er avgjørende – fra nettverk og streaming til platespiller, pickup og tonearm.<br><br>
+
+                    Filosofien er enkel: Det er opplevelsen som teller.
                 </span>
 
                 <span class="lang en">
-                    Eriksen Reference Audio AS is founded with a clear objective...
+                    Eriksen Reference Audio AS is founded with a clear objective: to deliver music experiences at the highest level – and make true high-end audio relevant for a new generation of listeners.<br><br>
+
+                    The company is led by Dag-Erik Eriksen, with a lifelong passion for sound and a deep understanding of the entire signal chain – from digital solutions to analog setups.<br><br>
+
+                    Each component is evaluated as part of a complete system. Synergy, placement and electrical control are essential – from network and streaming to turntable, cartridge and tonearm.<br><br>
+
+                    The philosophy is simple: It’s all about the experience.
                 </span>
             </p>
         </article>
 
+        <!-- CONTACT -->
         <article id="contact">
             <h2 class="major">
                 <span class="lang no">Kontakt</span>
                 <span class="lang en">Contact</span>
             </h2>
 
+            <!-- MAILTO FORM (WORKING BASIC VERSION) -->
             <form action="mailto:post@eriksenaudio.com" method="post" enctype="text/plain">
+
                 <div class="fields">
                     <div class="field half">
                         <input type="text" name="name" placeholder="Navn / Name" />
@@ -204,6 +221,7 @@
 
     </div>
 
+    <!-- FOOTER -->
     <footer id="footer">
         <p class="copyright">&copy; Eriksen Reference Audio AS</p>
         <p class="copyright"> Org. nr.:XXXX</p>
@@ -211,8 +229,10 @@
 
 </div>
 
+<!-- BG -->
 <div id="bg"></div>
 
+<!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
 <script src="assets/js/breakpoints.min.js"></script>
@@ -225,20 +245,8 @@ function setLang(lang) {
     document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
     document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
 }
+
 setLang('no');
-</script>
-
-<!-- 🔥 HISTORY FIX -->
-<script>
-// Fjern hash fra URL etter navigasjon
-window.addEventListener("hashchange", function () {
-    history.replaceState(null, null, ' ');
-});
-
-// Sikrer at siden starter uten hash
-window.addEventListener("load", function () {
-    history.replaceState(null, null, ' ');
-});
 </script>
 
 </body>
