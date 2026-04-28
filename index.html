@@ -42,6 +42,12 @@
         #header nav ul li a {
             display: inline-block;
         }
+
+        .contact-info {
+            margin-top: 2em;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
     </style>
 </head>
 
@@ -206,33 +212,27 @@
                 <span class="lang en">Contact</span>
             </h2>
 
-            <form action="mailto:post@eriksenaudio.com" method="post" enctype="text/plain">
+            <div class="contact-info">
+                <span class="lang no">
+                    E-post: post@eriksenaudio.com<br>
+                    Telefon: +47 976 18 238<br><br>
 
-                <div class="fields">
-                    <div class="field half">
-                        <input type="text" name="name" placeholder="Navn / Name" />
-                    </div>
+                    Adresse:<br>
+                    Nadderudveien 157B<br>
+                    1359 Eiksmarka<br>
+                    Norway
+                </span>
 
-                    <div class="field half">
-                        <input type="email" name="email" placeholder="E-post / Email" />
-                    </div>
+                <span class="lang en">
+                    Email: post@eriksenaudio.com<br>
+                    Phone: +47 976 18 238<br><br>
 
-                    <div class="field">
-                        <textarea name="message" rows="4" placeholder="Melding / Message"></textarea>
-                    </div>
-                </div>
-
-                <ul class="actions">
-                    <li>
-                        <input type="submit" value="Send / Send" class="primary" />
-                    </li>
-                </ul>
-            </form>
-
-            <p>
-                E-post: post@eriksenaudio.com<br>
-                Telefon: +47 976 18 238
-            </p>
+                    Address:<br>
+                    Nadderudveien 157B<br>
+                    1359 Eiksmarka<br>
+                    Norway
+                </span>
+            </div>
         </article>
 
     </div>
